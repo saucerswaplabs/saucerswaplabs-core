@@ -1,0 +1,49 @@
+{
+  "name": "@saucerswap/core",
+  "description": "Core contracts for the saucerswap protocol",
+  "version": "1.1.0",
+  "homepage": "https://saucerswap.finance",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saucerswaplabs/saucerswaplabs-core"
+  },
+  "keywords": [
+    "uniswap-v2"
+  ],
+  "files": [
+    "contracts"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@hashgraph/sdk": "2.13.1",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "bignumber.js": "^9.0.2",
+    "chai": "^4.3.6",
+    "chai-bignumber": "^3.0.0",
+    "chai-bn": "^0.2.1",
+    "dotenv": "^8.6.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "ethers": "^5.5.4",
+    "mocha": "^6.2.2",
+    "ncp": "^2.0.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "solc": "0.6.12",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "pretest": "yarn compile",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
+    "tslib": "^2.4.0"
+  }
+}
